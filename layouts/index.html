@@ -6,9 +6,16 @@
     </div>
     <div class="col-lg-9 col-xl-8 text-center">
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
+      {{ if eq $.Site.Language.LanguageName "English" }}
       <a class="btn btn-primary btn-lg px-4 mb-2"
         href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}prologue/introduction/"
         role="button">Get Start</a>
+      {{end}}
+      {{ if eq $.Site.Language.LanguageName "简体中文" }}
+      <a class="btn btn-primary btn-lg px-4 mb-2"
+        href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}prologue/introduction/"
+        role="button">开 始</a>
+      {{end}}
     </div>
   </div>
 </section>

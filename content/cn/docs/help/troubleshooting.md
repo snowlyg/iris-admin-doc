@@ -1,7 +1,7 @@
 ---
-title: "Troubleshooting"
-description: "Solutions to common problems."
-lead: "Solutions to common problems."
+title: "问题排查"
+description: "常见问题的解决方案。"
+lead: "常见问题的解决方案。"
 date: 2020-11-12T15:22:20+01:00
 lastmod: 2020-11-12T15:22:20+01:00
 draft: false
