@@ -1,7 +1,7 @@
 ---
-title: "Commands"
-description: "Doks comes with commands for common tasks."
-lead: "Doks comes with commands for common tasks."
+title: "命令行"
+description: "IRIS-ADMIN带有用于常见任务的命令。"
+lead: "带有用于常见任务的命令。"
 date: 2020-10-13T15:21:01+02:00
 lastmod: 2020-10-13T15:21:01+02:00
 draft: false

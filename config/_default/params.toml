@@ -1,7 +1,7 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Doks"
+title = "IRIS-ADMIN"
 titleSeparator = "-"
 titleAddition = "Modern Documentation Theme"
 description = "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
@@ -16,17 +16,17 @@ domainTLD = "doks.netlify.app"
 titleHome = "Doks Theme"
 
 ## Twitter Cards
-twitterSite = "@getdoks"
-twitterCreator = "@henkverlinde"
+twitterSite = "@ld_snowlyg"
+twitterCreator = "@ld_snowlyg"
 
 ## JSON-LD
 # schemaType = "Person"
 schemaType = "Organization"
-schemaName = "Doks"
-schemaAuthor = "Henk Verlinde"
-schemaAuthorTwitter = "https://twitter.com/henkverlinde"
-schemaAuthorLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
-schemaAuthorGitHub = "https://github.com/h-enk"
+schemaName = "IRIS-ADMIN"
+schemaAuthor = "Snowlyg"
+schemaAuthorTwitter = "https://twitter.com/ld_snowlyg"
+schemaAuthorLinkedIn = ""
+schemaAuthorGitHub = "https://github.com/snowlyg"
 schemaLocale = "en-US"
 schemaLogo = "logo-doks.png"
 schemaLogoWidth = 512
@@ -34,9 +34,9 @@ schemaLogoHeight = 512
 schemaImage = "doks.png"
 schemaImageWidth = 1280
 schemaImageHeight = 640
-schemaTwitter = "https://twitter.com/getdoks"
+schemaTwitter = "https://twitter.com/ld_snowlyg"
 schemaLinkedIn = ""
-schemaGitHub = "https://github.com/h-enk/doks"
+schemaGitHub = "https://github.com/snowlyg/iris-admin"
 schemaSection = "blog"
 
 ## Sitelinks Search Box
@@ -69,7 +69,7 @@ alertText = "Introducing the Doks child theme, several DX + UX updates, and more
 # repoHost [Github | Gitea | GitLab] is used for building the edit link based on git hoster
 repoHost = "GitHub"
 #repoHost = "Gitea"
-docsRepo = "https://github.com/h-enk/doks"
+docsRepo = "https://github.com/snowlyg/iris-admin"
 docsRepoBranch = "master"
 editPage = false
 
@@ -84,5 +84,5 @@ editPage = false
   highLight = true
   kaTex = false
   collapsibleSidebar = true
-  multilingualMode = false
+  multilingualMode = true
   docsVersioning = false
