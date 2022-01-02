@@ -1,0 +1,14 @@
+name = "IRIS-ADMIN"
+license = "Apache2.0"
+licenselink = "https://github.com/snowlyg/iris-admin/blob/master/LICENSE"
+description = ""
+
+homepage = "https://doc.snowlyg.com"
+demosite = "https://doc.snowlyg.com"
+
+tags = ["landing page" ]
+features = []
+
+[author]
+  name = "Snowlyg"
+  homepage = "https://blog.snowlyg.com"
