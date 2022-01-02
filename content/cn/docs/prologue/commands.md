@@ -13,86 +13,44 @@ weight: 130
 toc: true
 ---
 
-{{< alert icon="💡" text="You can change the commands in the scripts section of `./package.json`." />}}
+{{< alert icon="💡" text="可以在 [iris-admin-example](https://github.com/snowlyg/iris-admin-example/blob/main/gin/cmd/migrate/main.go) 里面找到命令行的使用说明" />}}
 
-## create
-
-Create new content for your site:
+{{< alert icon="👉" text="迁移和初始化命令都默认会填充基础数据,如果不需要填充数据需要设置 --seed=false。" />}}
+### 初始化
+初始化项目配置和数据库,并填充基础数据:
 
 ```bash
-npm run create [path] [flags]
+go run cmd/migrate/main.go init [--seed] 
 ```
 
-See also the Hugo docs: [hugo new](https://gohugo.io/commands/hugo_new/).
+### 迁移
 
-## lint
-
-Check scripts, styles, and markdown for errors:
+迁移数据库数据表:
 
 ```bash
-npm run lint
+go run cmd/migrate/main.go migrate [--seed]
 ```
 
-### scripts
+### 回滚迁移
 
-Check scripts for errors:
+回滚迁移:
 
 ```bash
-npm run lint:scripts [-- --fix]
+go run cmd/migrate/main.go rollback [--to]
 ```
 
-### styles
+### 重置
 
-Check styles for errors:
+回滚迁移并从新执行迁移:
 
 ```bash
-npm run lint:styles [-- --fix]
+go run cmd/migrate/main.go refresh [--seed]
 ```
 
-### markdown
+### 填充
 
-Check markdown for errors:
-
-```bash
-npm run lint:markdown [-- --fix]
-```
-
-## clean
-
-Delete temporary directories:
+填充数据:
 
 ```bash
-npm run clean
-```
-
-## start
-
-Start local development server:
-
-```bash
-npm run start
-```
-
-## build
-
-Build production website:
-
-```bash
-npm run build
-```
-
-### functions
-
-Build Lambda functions:
-
-```bash
-npm run build:functions
-```
-
-### preview
-
-Build production website including draft and future content:
-
-```bash
-npm run build:preview
+go run cmd/migrate/main.go seed
 ```

@@ -1,7 +1,7 @@
 ---
 title: "简介"
-description: "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
-lead: "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
+description: "IRIS-ADMIN 是一个使用 go 开发的简易后台管理接口开发组件框架,目的是让使用者简单快速的构建起后台管理平台所需的API."
+lead: "IRIS-ADMIN 是一个使用 go 开发的简易后台管理接口开发组件框架,目的是让使用者简单快速的构建起后台管理平台所需的API."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -13,46 +13,43 @@ weight: 100
 toc: true
 ---
 
-## Get started
+### 开始
 
-There are two main ways to get started with Doks:
+开始使用 IRIS-ADMIN 有两种主要方法：
 
-### Tutorial
+### 教程
 
-{{< alert icon="👉" text="The Tutorial is intended for novice to intermediate users." />}}
+{{< alert icon="👉" text="本教程适用于新手到中级用户。" />}}
 
-Step-by-step instructions on how to start a new Doks project. [Tutorial →](https://getdoks.org/tutorial/introduction/)
+关于如何开始新的 IRIS-ADMIN 项目的分步说明。 [教程 →](https://doc.snowlyg.com)
 
-### Quick Start
+### 快速开始
 
-{{< alert icon="👉" text="The Quick Start is intended for intermediate to advanced users." />}}
+{{< alert icon="👉" text="快速入门适用于中高级用户。" />}}
 
-One page summary of how to start a new Doks project. [Quick Start →]({{< relref "quick-start" >}})
+关于如何开始新的 IRIS-ADMIN 项目的简介教程 [快速开始 →]({{< relref "quick-start" >}})
 
-## Go further
+### 更多
 
-Recipes, Reference Guides, Extensions, and Showcase.
+未完待续
 
-### Recipes
+### 配置和使用
 
-Get instructions on how to accomplish common tasks with Doks. [Recipes →](https://getdoks.org/docs/recipes/project-configuration/)
+获取有关如何使用 IRIS-ADMIN 的详细说明 [配置和使用 →](https://doc.snowlyg.com)
 
-### Reference Guides
+### 扩展
 
-Learn how to customize Doks to fully make it your own. [Reference Guides →](https://getdoks.org/docs/reference-guides/security/)
+权鉴管理模块 [iris-admin-rbac →](https://github.com/snowlyg/iris-admin-rbac)
+任务管理模块 [iris-admin-job →](https://github.com/snowlyg/iris-admin-job)
 
-### Extensions
+### 例子
 
-Get instructions on how to add even more to Doks. [Extensions →](https://getdoks.org/docs/extensions/breadcrumb-navigation/)
+简单实用例子 [iris-admin-example →](https://github.com/snowlyg/iris-admin-example)
 
-### Showcase
+### 贡献
 
-See what others have build with Doks. [Showcase →](https://getdoks.org/showcase/electric-blocks/)
+了解如何为 IRIS-ADMIN 做出贡献。 [贡献 →](https://doc.snowlyg.com)
 
-## Contributing
+### 帮助
 
-Find out how to contribute to Doks. [Contributing →](https://getdoks.org/docs/contributing/how-to-contribute/)
-
-## Help
-
-Get help on Doks.
+获取有关 IRIS-ADMIN 的帮助。

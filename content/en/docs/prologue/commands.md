@@ -1,7 +1,7 @@
 ---
 title: "Commands"
-description: "Doks comes with commands for common tasks."
-lead: "Doks comes with commands for common tasks."
+description: "IRIS-ADMIN comes with commands for manage database."
+lead: "IRIS-ADMIN comes with commands formanage database."
 date: 2020-10-13T15:21:01+02:00
 lastmod: 2020-10-13T15:21:01+02:00
 draft: false
@@ -13,86 +13,44 @@ weight: 130
 toc: true
 ---
 
-{{< alert icon="💡" text="You can change the commands in the scripts section of `./package.json`." />}}
+{{< alert icon="💡" text="You can use it easy, like this: `iris-admin init`. [iris-admin-example](https://github.com/snowlyg/iris-admin-example/blob/main/gin/cmd/migrate/main.go) It has some helpful commands for build your program. Example  init , migrate , rollback and so on." />}}
 
-## create
-
-Create new content for your site:
+{{< alert icon="👉" text="`--seed` or `-s` is a global flag to seed datas into database, default is `true`." />}}
+### init
+Init is a command for initialize your program:
 
 ```bash
-npm run create [path] [flags]
+go run cmd/migrate/main.go init [--seed] 
 ```
 
-See also the Hugo docs: [hugo new](https://gohugo.io/commands/hugo_new/).
+### migrate
 
-## lint
-
-Check scripts, styles, and markdown for errors:
+Migrate is a command for migrate your database:
 
 ```bash
-npm run lint
+go run cmd/migrate/main.go migrate [--seed]
 ```
 
-### scripts
+### rollback
 
-Check scripts for errors:
+Rollback migrate:
 
 ```bash
-npm run lint:scripts [-- --fix]
+go run cmd/migrate/main.go rollback [--to]
 ```
 
-### styles
+### refresh
 
-Check styles for errors:
+Rollback and migrate:
 
 ```bash
-npm run lint:styles [-- --fix]
+go run cmd/migrate/main.go refresh [--seed]
 ```
 
-### markdown
+### 填充
 
-Check markdown for errors:
-
-```bash
-npm run lint:markdown [-- --fix]
-```
-
-## clean
-
-Delete temporary directories:
+Seed data:
 
 ```bash
-npm run clean
-```
-
-## start
-
-Start local development server:
-
-```bash
-npm run start
-```
-
-## build
-
-Build production website:
-
-```bash
-npm run build
-```
-
-### functions
-
-Build Lambda functions:
-
-```bash
-npm run build:functions
-```
-
-### preview
-
-Build production website including draft and future content:
-
-```bash
-npm run build:preview
+go run cmd/migrate/main.go seed
 ```

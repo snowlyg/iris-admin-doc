@@ -13,38 +13,23 @@ weight: 630
 toc: true
 ---
 
-## Hyas?
+## 其他文档？
 
-Doks is a [Hyas theme](https://gethyas.com/themes/) build by the creator of Hyas.
+- [iris](https://github.com/snowlyg/iris/wiki)
+- [gin](https://github.com/gin-gonic/gin#gin-web-framework)
+- [gorm](https://gorm.io/)
+- [casbin](https://casbin.org/docs/zh-CN/management-api)
 
-## Footer notice?
+## 我可以获得支持吗？
 
-Please keep it in place.
+交流社区：
 
-## Keyboard shortcuts for search?
+- [博客](https://blog.snowlyg.com)
+- [IRIS-ADMIN讨论](https://github.com/snowlyg/iris-admin/discussions)
 
-- focus: `Ctrl + /`
-- select: `↓` and `↑`
-- open: `Enter`
-- close: `Esc`
+##联系创作者？
 
-## Other documentation?
+向 `snowlyg` 发送消息：
 
-- [Netlify](https://docs.netlify.com/)
-- [Hugo](https://gohugo.io/documentation/)
-
-## Can I get support?
-
-Create a topic:
-
-- [Netlify Community](https://community.netlify.com/)
-- [Hugo Forums](https://discourse.gohugo.io/)
-- [Doks Discussions](https://github.com/h-enk/doks/discussions)
-
-## Contact the creator?
-
-Send `h-enk` a message:
-
-- [Netlify Community](https://community.netlify.com/)
-- [Hugo Forums](https://discourse.gohugo.io/)
-- [Doks Discussions](https://github.com/h-enk/doks/discussions)
+- [博客](https://blog.snowlyg.com)
+- [IRIS-ADMIN 讨论](https://github.com/snowlyg/iris-admin/discussions)

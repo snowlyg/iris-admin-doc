@@ -1,7 +1,7 @@
 ---
 title: "Quick Start"
-description: "One page summary of how to start a new Doks project."
-lead: "One page summary of how to start a new Doks project."
+description: "One page summary of how to start a new IRIS-ADMIN project."
+lead: "One page summary of how to start a new IRIS-ADMIN project."
 date: 2020-11-16T13:59:39+01:00
 lastmod: 2020-11-16T13:59:39+01:00
 draft: false
@@ -15,55 +15,52 @@ toc: true
 
 ## Requirements
 
-Doks uses npm to centralize dependency management, making it  resources, build tooling, plugins, and build scripts:
+IRIS-ADMIN is golang project:
 
-- Download and install [Node.js](https://nodejs.org/) (it includes npm) for your platform.
+- Download and install  [golang](https://go.dev/doc/install) (it includes go) for your platform.
 
-## Start a new Doks project
-
-Create a new site, change directories, install dependencies, and start development server.
-
-### Create a new site
-
-Doks is available as a child theme, and a starter theme:
-
-- Use the Doks child theme, if you do __not__ plan to customize a lot, and/or need future Doks updates.
-- Use the Doks starter theme, if you plan to customize a lot, and/or do __not__ need future Doks updates.
-
-Not quite sure? Use the Doks child theme.
-
-#### Doks child theme
+## Create a directory and  Change directories
 
 ```bash
-git clone https://github.com/h-enk/doks-child-theme.git my-doks-site
+mkdir site
+cd site
 ```
 
-#### Doks starter theme
+### Create a new file on `site`
 
-```bash
-git clone https://github.com/h-enk/doks.git my-doks-site
+- `main.go` :
+```go
+package main
+
+import (
+	"path/filepath"
+	"github.com/snowlyg/iris-admin/server/web"
+	"github.com/snowlyg/iris-admin/server/web/web_gin"
+)
+
+func main() {
+	// 初始化 gin web 项目
+	wi := web_gin.Init()
+	// 启动项目
+	web.Start(wi)
+}
 ```
 
-### Change directories
-
-```bash
-cd my-doks-site
-```
 
 ### Install dependencies
 
 ```bash
-npm install
+ go mod tidy
 ```
 
 ### Start development server
 
 ```bash
-npm run start
+go run main.go
 ```
 
-Doks will start the Hugo development webserver accessible by default at `http://localhost:1313`. Saved changes will live reload in the browser.
+IRIS-ADMIN will start the Hugo development webserver accessible by default at `http://localhost:8085`. Saved changes will live reload in the browser.
 
 ## Other commands
 
-Doks comes with commands for common tasks. [Commands →]({{< relref "commands" >}})
+IRIS-ADMIN comes with commands for common tasks. [Commands →]({{< relref "commands" >}})

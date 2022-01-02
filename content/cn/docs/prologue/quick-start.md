@@ -13,13 +13,13 @@ weight: 110
 toc: true
 ---
 
-## 要求
+### 要求
 
 IRIS-ADMIN 项目基于go语言开发,需要提前安装好go语言环境.
 
 - 根据你的需要下载安装好 [golang](https://go.dev/doc/install) 环境,并设置好系统环境变量.
 
-## 启动一个新的 IRIS-ADMIN 项目
+### 启动一个新的 IRIS-ADMIN 项目
 
 - 在你系统的 GOPATH 路径下新建一个目录 `site`.
 - 然后在 `site` 目录下执行 `go mod init` 命令初始化依赖管理文件.
@@ -56,6 +56,6 @@ go run main.go
 
 IRIS-ADMIN 将会默认坚挺本地 `http://localhost:8085` 地址. 在浏览器中输入次地址就可以看到 `IRIS-ADMIN is running!!!` 的输出字样.
 
-## 其他命令
+### 其他命令
 
 IRIS-ADMIN 内置了一些常用的数据迁移管理命令 [命令 →]({{< relref "commands" >}})
