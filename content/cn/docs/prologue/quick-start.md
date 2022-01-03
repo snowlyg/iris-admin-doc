@@ -25,6 +25,7 @@ IRIS-ADMIN 项目基于go语言开发,需要提前安装好go语言环境.
 - 然后在 `site` 目录下执行 `go mod init` 命令初始化依赖管理文件.
 - 接着执行 `go get -u github.com/snowlyg/iris-admin@latest` 获取 IRIS-ADMIN 项目依赖.
 - 继续在 `site` 目录新建 `main.go` 文件,在文件内输入:
+  
 ```go
 package main
 

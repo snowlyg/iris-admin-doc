@@ -39,8 +39,8 @@ toc: true
 
 ### 扩展
 
-权鉴管理模块 [iris-admin-rbac →](https://github.com/snowlyg/iris-admin-rbac)
-任务管理模块 [iris-admin-job →](https://github.com/snowlyg/iris-admin-job)
+- 权鉴管理模块 [iris-admin-rbac →](https://github.com/snowlyg/iris-admin-rbac)
+- 任务管理模块 [iris-admin-job →](https://github.com/snowlyg/iris-admin-job)
 
 ### 例子
 

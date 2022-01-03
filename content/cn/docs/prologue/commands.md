@@ -16,7 +16,9 @@ toc: true
 {{< alert icon="💡" text="可以在 [iris-admin-example](https://github.com/snowlyg/iris-admin-example/blob/main/gin/cmd/migrate/main.go) 里面找到命令行的使用说明" />}}
 
 {{< alert icon="👉" text="迁移和初始化命令都默认会填充基础数据,如果不需要填充数据需要设置 --seed=false。" />}}
+
 ### 初始化
+
 初始化项目配置和数据库,并填充基础数据:
 
 ```bash
