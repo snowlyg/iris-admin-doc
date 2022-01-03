@@ -7,4 +7,4 @@ draft: false
 images: []
 ---
 
-IRIS-ADMINs 贡献者。
+IRIS-ADMIN 贡献者。

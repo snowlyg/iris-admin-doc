@@ -30,16 +30,16 @@ IRIS-ADMIN 项目基于go语言开发,需要提前安装好go语言环境.
 package main
 
 import (
-	"path/filepath"
-	"github.com/snowlyg/iris-admin/server/web"
-	"github.com/snowlyg/iris-admin/server/web/web_gin"
+  "path/filepath"
+  "github.com/snowlyg/iris-admin/server/web"
+  "github.com/snowlyg/iris-admin/server/web/web_gin"
 )
 
 func main() {
-	// 初始化 gin web 项目
-	wi := web_gin.Init()
-	// 启动项目
-	web.Start(wi)
+  // 初始化 gin web 项目
+  wi := web_gin.Init()
+  // 启动项目
+  web.Start(wi)
 }
 ```
 

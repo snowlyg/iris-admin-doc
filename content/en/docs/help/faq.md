@@ -13,11 +13,7 @@ weight: 630
 toc: true
 ---
 
-## Hyas?
-
-Doks is a [Hyas theme](https://gethyas.com/themes/) build by the creator of Hyas.
-
-## Footer notice?
+## Footer notice
 
 Please keep it in place.
 
@@ -28,23 +24,25 @@ Please keep it in place.
 - open: `Enter`
 - close: `Esc`
 
-## Other documentation?
+## Other documentation
 
-- [Netlify](https://docs.netlify.com/)
-- [Hugo](https://gohugo.io/documentation/)
+- [iris](https://github.com/snowlyg/iris/wiki)
+- [gin](https://github.com/gin-gonic/gin#gin-web-framework)
+- [gorm](https://gorm.io/)
+- [casbin](https://casbin.org/docs/zh-CN/management-api)
+- [robfig/cron](https://github.com/robfig/cron)
 
-## Can I get support?
+## Can I get support
 
 Create a topic:
 
-- [Netlify Community](https://community.netlify.com/)
-- [Hugo Forums](https://discourse.gohugo.io/)
-- [Doks Discussions](https://github.com/h-enk/doks/discussions)
+- [Blog](https://blog.snowlyg.com)
+- [IRIS-ADMIN Discussions](https://github.com/snowlyg/iris-admin/discussions)
 
-## Contact the creator?
+## Contact the creator
 
-Send `h-enk` a message:
+Send `snowlyg` a message:
 
-- [Netlify Community](https://community.netlify.com/)
-- [Hugo Forums](https://discourse.gohugo.io/)
-- [Doks Discussions](https://github.com/h-enk/doks/discussions)
+
+- [Blog](https://blog.snowlyg.com)
+- [IRIS-ADMIN Discussions](https://github.com/snowlyg/iris-admin/discussions)
