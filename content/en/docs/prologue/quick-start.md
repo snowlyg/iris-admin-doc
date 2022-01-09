@@ -19,6 +19,12 @@ IRIS-ADMIN is golang project:
 
 - Download and install  [golang](https://go.dev/doc/install) (it includes go) for your platform.
 
+### Get package
+
+```sh
+  go get -u github.com/snowlyg/iris-admin@latest
+```
+
 ## Create a directory and  Change directories
 
 ```bash
@@ -59,7 +65,7 @@ func main() {
 go run main.go
 ```
 
-IRIS-ADMIN will start the Hugo development webserver accessible by default at `http://localhost:8085`. Saved changes will live reload in the browser.
+IRIS-ADMIN will start the Hugo development webserver accessible by default at `http://localhost:8085/v0/versions`. Saved changes will live reload in the browser.
 
 ## Other commands
 

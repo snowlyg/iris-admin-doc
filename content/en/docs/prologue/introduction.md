@@ -49,7 +49,7 @@ Learn how to customize IRIS-ADMIN to fully make it your own. [Reference Guides �
 
 ## Contributing
 
-Find out how to contribute to IRIS-ADMIN. [Contributing →](https://doc.snowlyg.com)
+Find out how to contribute to IRIS-ADMIN. [Contributing →]({{< relref "contributors" >}})
 
 ## Help
 

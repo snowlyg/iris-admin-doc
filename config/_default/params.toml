@@ -3,8 +3,8 @@
 ## Homepage
 title = "IRIS-ADMIN"
 titleSeparator = "-"
-titleAddition = "Modern Documentation Theme"
-description = "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
+titleAddition = "Quickly build platform management background API framework"
+description = "IRIS-ADMIN is a simple background management interface development component framework developed with go, the purpose is to allow users to easily and quickly build the API required by the background management platform."
 
 ## Documentation
 # docsVersion = "0.3"

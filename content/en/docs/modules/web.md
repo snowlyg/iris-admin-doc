@@ -15,7 +15,7 @@ toc: true
 
 ### 配置
 
-自动生成 `web.yaml` 文件到项目目录.
+自动生成 `web.yaml` 文件到项目配置目录.
 
 - web.yaml
   

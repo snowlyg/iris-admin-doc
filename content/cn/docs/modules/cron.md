@@ -1,7 +1,7 @@
 ---
-title : "RBAC"
-description: "集成RBAC模块到项目,生成基础的权限管理接口功能！"
-lead: "集成RBAC模块到项目,生成基础的权限管理接口功能！"
+title : "定时任务"
+description: "集成定时任务功能！"
+lead: "集成定时任务功能！"
 date: 2020-10-06T08:48:45+00:00
 lastmod: 2020-10-06T08:48:45+00:00
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "简介"
-description: "IRIS-ADMIN 是一个使用 go 开发的简易后台管理接口开发组件框架,目的是让使用者简单快速的构建起后台管理平台所需的API."
-lead: "IRIS-ADMIN 是一个使用 go 开发的简易后台管理接口开发组件框架,目的是让使用者简单快速的构建起后台管理平台所需的API."
+description: "IRIS-ADMIN 是一个 GO开发的 简易使用的 组件式的 后台管理接口开发框架,目的是让使用者 更快速的构建起后台管理平台所需的API."
+lead: "RIS-ADMIN 是一个 GO开发的 简易使用的 组件式的 后台管理接口开发框架,目的是让使用者 更快速的构建起后台管理平台所需的API."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -33,9 +33,9 @@ toc: true
 
 未完待续
 
-### 配置和使用
+### 配置
 
-获取有关如何使用 IRIS-ADMIN 的详细说明 [配置和使用 →](https://doc.snowlyg.com)
+获取有关如何使用 IRIS-ADMIN 的详细说明 [组件 →]({{< relref "modules" >}})
 
 ### 扩展
 
@@ -48,7 +48,7 @@ toc: true
 
 ### 贡献
 
-了解如何为 IRIS-ADMIN 做出贡献。 [贡献 →](https://doc.snowlyg.com)
+了解如何为 IRIS-ADMIN 做出贡献。 [贡献 →]({{< relref "contributors" >}})
 
 ### 帮助
 

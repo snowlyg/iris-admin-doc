@@ -15,7 +15,7 @@ toc: true
 
 ### 配置
 
-调用 `database.Instance()` 单列会自动生成 `mysql.yaml` 文件到项目目录.
+调用 `database.Instance()` 单列会自动生成 `mysql.yaml` 文件到项目配置目录.
 
 - mysql.yaml
 

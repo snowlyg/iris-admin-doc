@@ -1,7 +1,7 @@
 ---
 title : "数据库服务 "
-description: "数据库操作服务！"
-lead: "数据库操作服务！"
+description: "集成数据库操作服务！"
+lead: "集成数据库操作服务！"
 date: 2020-10-06T08:48:45+00:00
 lastmod: 2020-10-06T08:48:45+00:00
 draft: false
@@ -15,21 +15,23 @@ toc: true
 
 ### 配置
 
-调用 `database.Instance()` 单列会自动生成 `mysql.yaml` 文件到项目目录.
+调用 `database.Instance()` 单列会自动生成 `mysql.json` 文件到项目配置目录.
 
-- mysql.yaml
+- mysql.json
 
 
-```yaml
-config: charset=utf8mb4&parseTime=True&loc=Local
-db-name: 
-log-mode: false
-log-zap: error
-max-idle-conns: 0
-max-open-conns: 0
-password: 
-path: 127.0.0.1:3306
-username: root
+```json
+{
+"config": "charset=utf8mb4&parseTime=True&loc=Local",
+"db-name": "",
+"log-mode": false,
+"log-zap": "error",
+"max-idle-conns": 0,
+"max-open-conns": 0,
+"password": "",
+"path": 127.0.0.1:3306,
+"username": "root"
+}
 ```
 
 ### 使用方法

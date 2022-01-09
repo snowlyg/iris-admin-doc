@@ -15,7 +15,7 @@ toc: true
 
 ### 配置
 
-自动生成 `operation.yaml` 文件到项目目录.
+自动生成 `operation.yaml` 文件到项目配置目录.
 - 可以设置过滤路径到 `except`,设置需要包括的路径到 `include`.
 - operation.yaml
 

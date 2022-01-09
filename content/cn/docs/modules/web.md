@@ -1,7 +1,7 @@
 ---
-title : "RBAC"
-description: "集成RBAC模块到项目,生成基础的权限管理接口功能！"
-lead: "集成RBAC模块到项目,生成基础的权限管理接口功能！"
+title : "WEB服务"
+description: "快速集成WEB框架！"
+lead: "快速集成WEB框架！"
 date: 2020-10-06T08:48:45+00:00
 lastmod: 2020-10-06T08:48:45+00:00
 draft: false
@@ -15,32 +15,38 @@ toc: true
 
 ### 配置
 
-自动生成 `web.yaml` 文件到项目目录.
+自动生成 `web.json` 文件到项目配置目录.
 
-- web.yaml
+- web.json
   
-```yaml
-captcha: # 验证码设置
-  img-height: 80
-  img-width: 240
-  key-long: 4
-except: # 权限过滤设置,集成权鉴模块会自动生成系统权限.次设置可以过滤不需要设置为权限的路由
-  method: ""
-  uri: ""
-limit: # 接口频率看
-  burst: 5
-  disable: true
-  limit: 0
-max-size: 1024 # 文件上传大小限制
-system:
-  addr: 127.0.0.1:8085 # 监听地址
-  db-type: mysql # 数据库类型,仅支持 mysql
-  level: release # 服务模式 debug , test release
-  static-prefix: "" # 静态文件访问地址,留空即可
-  time-format: "2006-01-02 15:04:05" # 时间格式
-  tls: false # https 是否开启
-  web-prefix: "" # 前端访问地址,留空即可
-
+```json
+{
+  "captcha": //验证码设置
+ { "img-height": 80,
+  "img-width": 240,
+  "key-long": 4
+  },
+"except": //权限过滤设置,集成权鉴模块会自动生成系统权限.次设置可以过滤不需要设置为权限的路由
+  {
+  "method": "",
+  "uri": ""
+  },
+"limit": //接口频率看
+  {
+    "burst": 5,
+  "disable": true,
+  "limit": 0
+  },
+"max-size": 1024, //文件上传大小限制
+"system":
+ { 
+   "addr": "127.0.0.1:8085", //监听地址
+  "db-type": "mysql", //数据库类型,仅支持 mysql
+  "level": "release", //服务模式 debug , test release
+  "time-format": "2006-01-02 15:04:05", //时间格式
+  "tls": false //https 是否开启
+  }
+}
 ```
 
 ### 使用方法

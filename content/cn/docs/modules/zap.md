@@ -13,6 +13,26 @@ weight: 110
 toc: true
 ---
 
+### 配置
+
+自动生成 `zap.json` 文件到项目配置目录.
+
+- zap.json
+  
+```json
+{
+  "level": "debug",
+  "format": "console",
+  "prefix": "[IRIS-ADMIN]",
+  "director": "logs",
+  "link-name": "latest_log",
+  "show-line": true,
+  "encode-level": "LowercaseColorLevelEncoder",
+  "stacktrace-key": "stacktrace",
+  "log-in-console": false
+}
+```
+
 ### 使用方法
 
 - 使用 [go.uber.org/zap](https://pkg.go.dev/go.uber.org/zap) 第三方包实现

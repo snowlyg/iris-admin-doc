@@ -5,16 +5,16 @@
   url = "/docs/prologue/"
 
 [[docs]]
-  name = "进阶"
-  weight = 20
-  identifier = "advance"
-  url = "/docs/advance/"
-
-[[docs]]
   name = "组件"
-  weight = 30
+  weight = 20
   identifier = "modules"
   url = "/docs/modules/"
+
+[[docs]]
+  name = "进阶"
+  weight = 30
+  identifier = "advance"
+  url = "/docs/advance/"
 
 [[docs]]
   name = "帮助"
