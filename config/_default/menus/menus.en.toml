@@ -3,6 +3,19 @@
   weight = 10
   identifier = "prologue"
   url = "/docs/prologue/"
+  
+[[docs]]
+  name = "Modules"
+  weight = 20
+  identifier = "modules"
+  url = "/docs/modules/"
+
+[[docs]]
+  name = "Advance"
+  weight = 30
+  identifier = "advance"
+  url = "/docs/advance/"
+
 
 [[docs]]
   name = "Help"
