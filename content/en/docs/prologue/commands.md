@@ -16,14 +16,14 @@ toc: true
 {{< alert icon="💡" text="You can use it easy, like this: `iris-admin init`. [iris-admin-example](https://github.com/snowlyg/iris-admin-example/blob/main/gin/cmd/migrate/main.go) It has some helpful commands for build your program. Example  init , migrate , rollback and so on." />}}
 
 {{< alert icon="👉" text="`--seed` or `-s` is a global flag to seed datas into database, default is `true`." />}}
-### init
+### Initialize
 Init is a command for initialize your program:
 
 ```bash
 go run cmd/migrate/main.go init [--seed] 
 ```
 
-### migrate
+### Migrate
 
 Migrate is a command for migrate your database:
 
@@ -31,7 +31,7 @@ Migrate is a command for migrate your database:
 go run cmd/migrate/main.go migrate [--seed]
 ```
 
-### rollback
+### Rollback
 
 Rollback migrate:
 
@@ -39,7 +39,7 @@ Rollback migrate:
 go run cmd/migrate/main.go rollback [--to]
 ```
 
-### refresh
+### Refresh
 
 Rollback and migrate:
 
@@ -47,7 +47,7 @@ Rollback and migrate:
 go run cmd/migrate/main.go refresh [--seed]
 ```
 
-### 填充
+### Seed
 
 Seed data:
 

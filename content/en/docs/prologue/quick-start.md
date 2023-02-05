@@ -45,11 +45,9 @@ import (
 )
 
 func main() {
-	// 初始化 gin web 项目
 	wi := web_gin.Init()
-	// 启动项目
 	web.Start(wi)
-}
+
 ```
 
 

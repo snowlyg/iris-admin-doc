@@ -53,7 +53,7 @@ func main() {
 go run main.go
 ```
 
-IRIS-ADMIN 将会默认坚挺本地 `http://localhost:8085` 地址. 在浏览器中输入次地址就可以看到 `IRIS-ADMIN is running!!!` 的输出字样.
+IRIS-ADMIN 将会默认监听本地 `http://localhost:8085` 地址. 在浏览器中输入地址就可以看到 `IRIS-ADMIN is running!!!` 的输出字样.
 
 ### 接口文档
 
