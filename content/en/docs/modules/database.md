@@ -1,7 +1,7 @@
 ---
-title : "数据库服务 "
-description: "数据库操作服务！"
-lead: "数据库操作服务！"
+title : "Database"
+description: "Import database to program"
+lead: "Import database to program"
 date: 2020-10-06T08:48:45+00:00
 lastmod: 2020-10-06T08:48:45+00:00
 draft: false
@@ -13,9 +13,9 @@ weight: 110
 toc: true
 ---
 
-### 配置
+### Config
 
-调用 `database.Instance()` 单列会自动生成 `mysql.yaml` 文件到项目配置目录.
+When use `database.Instance()` first time `mysql.yaml` config file will be create.
 
 - mysql.yaml
 
@@ -32,18 +32,17 @@ path: 127.0.0.1:3306
 username: root
 ```
 
-### 使用方法
+### How To Use
 
-- 数据服务 [目前仅支持 mysql]
-- 使用 `gorm.io/gorm` 第三方包实现
-- 通过单列 `database.Instance()` 操作数据
-例如:
+- Only support mysql now
+-  `gorm.io/gorm` 
+-  `database.Instance()` 
   
 ```go
 database.Instance().Model(&User{}).Where("name = ?","name").Find(&user)
 ..
 ```
 
-### 参考
+### Example
 
-- 权鉴管理模块 [iris-admin-rbac →](https://github.com/snowlyg/iris-admin-rbac)
+- [iris-admin-rbac →](https://github.com/snowlyg/iris-admin-rbac)

@@ -1,7 +1,7 @@
 ---
-title : "服务配置"
-description: "服务配置初始化,并生成本地配置文件！"
-lead: "服务配置初始化,并生成本地配置文件！"
+title : "Service for config"
+description: "Initialize service's config and auto create a config file！"
+lead: "Initialize service's config and auto create a config file！"
 date: 2020-10-06T08:48:45+00:00
 lastmod: 2020-10-06T08:48:45+00:00
 draft: false
@@ -13,10 +13,10 @@ weight: 110
 toc: true
 ---
 
-### 使用方法
+### How To Use
 
-- 使用 [github.com/spf13/viper](https://github.com/spf13/viper) 第三方包实现.
-- 需要实现 `func getViperConfig() viper_server.ViperConfig` 方法:
+-  [github.com/spf13/viper](https://github.com/spf13/viper) .
+-  `func getViperConfig() viper_server.ViperConfig` :
   
 ```go
 package cache
@@ -39,7 +39,7 @@ type Redis struct {
   PoolSize int    `mapstructure:"pool-size" json:"poolSize" yaml:"pool-size"`
 }
 
-// getViperConfig 获取初始化配置
+// getViperConfig 
 func getViperConfig() viper_server.ViperConfig {
   configName := "redis"
   db := fmt.Sprintf("%d", CONFIG.DB)
@@ -50,20 +50,19 @@ func getViperConfig() viper_server.ViperConfig {
     Type:      g.ConfigType,
     Watch: func(vi *viper.Viper) error {
       if err := vi.Unmarshal(&CONFIG); err != nil {
-        return fmt.Errorf("反序列化错误: %v", err)
+        return fmt.Errorf("Unmarshal json error: %v", err)
       }
-      // 监控配置文件变化
+      
       vi.SetConfigName(configName)
       vi.WatchConfig()
       vi.OnConfigChange(func(e fsnotify.Event) {
-        fmt.Println("配置发生变化:", e.Name)
+        fmt.Println("config is change:", e.Name)
         if err := vi.Unmarshal(&CONFIG); err != nil {
-          fmt.Printf("反序列化错误: %v \n", err)
+          fmt.Printf("Unmarshal json error: %v \n", err)
         }
       })
       return nil
     },
-    // 注意:设置默认配置值的时候,前面不能有空格等其他符号.必须紧贴左侧.
     Default: []byte(`
 db: ` + db + `
 addr: "` + CONFIG.Addr + `"

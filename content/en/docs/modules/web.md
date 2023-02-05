@@ -1,7 +1,7 @@
 ---
 title : "RBAC"
-description: "集成RBAC模块到项目,生成基础的权限管理接口功能！"
-lead: "集成RBAC模块到项目,生成基础的权限管理接口功能！"
+description: "Import RBAC module to program"
+lead: "Import RBAC module to program"
 date: 2020-10-06T08:48:45+00:00
 lastmod: 2020-10-06T08:48:45+00:00
 draft: false
@@ -13,49 +13,47 @@ weight: 110
 toc: true
 ---
 
-### 配置
+### Config
 
-自动生成 `web.yaml` 文件到项目配置目录.
+Auto create `web.yaml` config file .
 
 - web.yaml
   
 ```yaml
-captcha: # 验证码设置
+captcha: # 
   img-height: 80
   img-width: 240
   key-long: 4
-except: # 权限过滤设置,集成权鉴模块会自动生成系统权限.次设置可以过滤不需要设置为权限的路由
+except: # except routes which don't need to create promissions 
   method: ""
   uri: ""
-limit: # 接口频率看
+limit: # require limit 
   burst: 5
   disable: true
   limit: 0
-max-size: 1024 # 文件上传大小限制
+max-size: 1024 # Max size of upload file 
 system:
-  addr: 127.0.0.1:8085 # 监听地址
-  db-type: mysql # 数据库类型,仅支持 mysql
-  level: release # 服务模式 debug , test release
-  static-prefix: "" # 静态文件访问地址,留空即可
-  time-format: "2006-01-02 15:04:05" # 时间格式
-  tls: false # https 是否开启
-  web-prefix: "" # 前端访问地址,留空即可
+  addr: 127.0.0.1:8085 
+  db-type: mysql # type of database,only support mysql now
+  level: release # support: debug , test release
+  time-format: "2006-01-02 15:04:05" # time format
+  tls: false # https 
 
 ```
 
-### 使用方法
+### How to Use
 
-- [github.com/kataras/iris/v12](https://github.com/kataras/iris) 第三方包实现
-- [gin-gonic/gin](https://github.com/gin-gonic/gin) 第三方包实现
-- Web框架服务需要实现 `type WebFunc interface {}`  接口
+- [github.com/kataras/iris/v12](https://github.com/kataras/iris)
+- [gin-gonic/gin](https://github.com/gin-gonic/gin)
+-  `type WebFunc interface {}`  interface
   
 ```go
-// WebFunc 框架服务接口
-// - GetTestClient 测试客户端
-// - GetTestLogin 测试登录
-// - AddWebStatic 添加静态页面
-// - AddUploadStatic 上传文件路径
-// - Run 启动
+// WebFunc 
+// - GetTestClient 
+// - GetTestLogin 
+// - AddWebStatic 
+// - AddUploadStatic 
+// - Run 
 type WebFunc interface {
   GetTestClient(t *testing.T) *httptest.Client
   GetTestLogin(t *testing.T, url string, res httptest.Responses, datas ...interface{}) *httptest.Client
@@ -66,7 +64,7 @@ type WebFunc interface {
 }
 ```
 
-### 简单实用
+### Simple to start
   
 ```go
 package main
@@ -78,13 +76,11 @@ import (
 )
 
 func main() {
-  // 初始化 gin web 项目
   wi := web_gin.Init()
-  // 启动项目
   web.Start(wi)
 }
 ```
 
-### 参考
+### Example
 
-简单实用例子 [iris-admin-example →](https://github.com/snowlyg/iris-admin-example)
+- [iris-admin-example →](https://github.com/snowlyg/iris-admin-example)

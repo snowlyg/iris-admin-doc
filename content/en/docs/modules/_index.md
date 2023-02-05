@@ -1,7 +1,7 @@
 ---
-title : "组件"
-description: "简单项目仅供学习，欢迎指点！"
-lead: "简单项目仅供学习，欢迎指点！"
+title : "Modules"
+description: "Some simple module for this project"
+lead: "Some simple module for this project"
 date: 2020-10-06T08:48:45+00:00
 lastmod: 2020-10-06T08:48:45+00:00
 draft: false

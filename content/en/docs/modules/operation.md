@@ -1,7 +1,7 @@
 ---
-title : "系统操作日志"
-description: "根据接口自动生成操作日志！"
-lead: "根据接口自动生成操作日志！"
+title : "Operation logs"
+description: "Create opration logs for restful api！"
+lead: "Create opration logs for restful api！"
 date: 2020-10-06T08:48:45+00:00
 lastmod: 2020-10-06T08:48:45+00:00
 draft: false
@@ -13,12 +13,11 @@ weight: 110
 toc: true
 ---
 
-### 配置
+### Config
 
-自动生成 `operation.yaml` 文件到项目配置目录.
-- 可以设置过滤路径到 `except`,设置需要包括的路径到 `include`.
+- default config name is `operation.yaml` .
+- you can use `except` and  `include` to set which route you want to create or not create opreation log.
 - operation.yaml
-
 
 ```yaml
 except:
@@ -29,10 +28,9 @@ include:
   uri: api/v1/menus
 ```
 
-### 使用方法
+### Add middleware by Use()
 
-- 并通过 `index.Use(operation.OperationRecord())` 使用中间件,实现接口自动生成操作日志
+-  `index.Use(operation.OperationRecord())` 
+### Example
 
-### 参考
-
-- 权鉴管理模块 [iris-admin-rbac →](https://github.com/snowlyg/iris-admin-rbac)
+-  [iris-admin-rbac →](https://github.com/snowlyg/iris-admin-rbac)
